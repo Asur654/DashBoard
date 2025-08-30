@@ -1,18 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Dashboard Project
+
+A modern dashboard application built with Next.js, featuring dynamic components, responsive design, and a clean user interface.
+
+## Features
+
+- 📊 Interactive Chart
+- 🎨 Theme Switcher (Light/Dark mode with next-themes)
+- 📱 Responsive Design with Tailwind CSS
+- 🧩 Modern UI Components with shadcn/ui
+- 📈 Financial Analytics Dashboard
+- 📋 Interactive Data Tables
+
+## Project Structure
+
+```
+app/
+├── cards/
+│   ├── chat.tsx              # Chat component
+│   ├── FinancialWelbeign.tsx # Financial wellbeing card
+│   ├── keyinsight.tsx        # Key insights component
+│   ├── prospectLeads.tsx     # Prospect leads management
+│   ├── steps.tsx             # Steps component
+│   └── totalFran.jsx         # Total franchise overview
+├── dashboard/
+│   └── page.tsx              # Dashboard page
+├── table/
+│   └── table.jsx            # Data table component
+├── components/
+│   └── sidebar/             # Sidebar navigation
+├── layout.tsx               # Root layout
+└── page.tsx                # Home page
+```
+
+## Key Components
+
+- **Sidebar:** Navigation and theme switching functionality
+- **Chart Component:** Visual data representation
+- **Financial Wellbeing:** Financial metrics and analysis
+- **Key Insights:** Important business metrics
+- **Prospect Leads:** Lead management interface
+- **Data Table:** Structured data display
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
+````bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -25,12 +59,47 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Learned Next.js](https://youtu.be/ZVnjOPwW4ZA) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+### Themes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project uses `next-themes` for theme management. To modify themes, adjust the theme provider settings in your components:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```tsx
+// Example theme usage
+import { useTheme } from "next-themes";
+
+const ThemeToggle = () => {
+  const { theme, setTheme } = useTheme();
+  // Implementation
+};
+````
+
+### UI Components
+
+All UI components are built with shadcn/ui, allowing for easy customization and extension. To add new components:
+
+```bash
+npx shadcn-ui@latest add [component-name]
+```
+
+## Deployment
+
+This project can be deployed on Vercel or any other Next.js-compatible hosting platform.
+
+For Vercel deployment:
+
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Deploy automatically with Git integration
+
+## Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for UI components
+- [Next.js](https://nextjs.org/) for the framework
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [next-themes](https://github.com/pacocoursey/next-themes) for theme management
+- [React-Icons](https://react-icons.github.io/react-icons/) for Icons
+- [Figma_images](https://www.figma.com/design/Z8s2h3aiFdLBJeUMHoWKWI/frontend-weframetech?node-id=1-5937&t=RwOtQwUX52ILtVvS-0) for images, color codes and measurements.
