@@ -43,10 +43,7 @@ export default function RootLayout({
             <SidebarTrigger />
             <span>Menu</span>
             </div>
-            <div className="flex flex-col -gap-2">
             <ModeToggle />
-            <span>Mode</span>
-            </div>
             
             </div>
             {children}
