@@ -10,7 +10,7 @@ import {
 
 const prospectLeads = () => {
     return (
-        <Card className="rounded-2xl shadow-sm border">
+        <Card className="rounded-2xl shadow-sm border transition-transform duration-200 hover:scale-105">
             <CardHeader>
                 <CardTitle className="text-2xl">Prospect Leads</CardTitle>
             </CardHeader>
@@ -18,25 +18,25 @@ const prospectLeads = () => {
                 <div className="flex flex-col gap-2 md:flex-row justify-between items-center bg-gray-100 p-3 rounded-lg">
                     <div className="flex items-center gap-3">
                         <Image src="/lead1.png" alt="Top Perf" width={40} height={40} priority className="rounded-full" />
-                        <p className="font-semibold">Wade Warren</p>
+                        <p className="font-semibold text-black">Wade Warren</p>
                     </div>
-                    <p><span className="text-muted-foreground">Stage: </span>Initial Inquiry</p>
+                    <p className="text-black"><span className="text-muted-foreground">Stage: </span>Initial Inquiry</p>
 
                 </div>
                 <div className="flex flex-col gap-2 md:flex-row justify-between items-center bg-gray-100 p-3 rounded-lg">
                     <div className="flex items-center gap-3">
                         <Image src="/lead2.png" alt="Top Perf" width={40} height={40} priority className="rounded-full" />
-                        <p className="font-semibold">Ava Wright</p>
+                        <p className="font-semibold text-black">Ava Wright</p>
                     </div>
-                    <p><span className="text-muted-foreground">Stage: </span>Initial Inquiry</p>
+                    <p className="text-black"><span className="text-muted-foreground">Stage: </span>Initial Inquiry</p>
 
                 </div>
                 <div className="flex flex-col gap-2 md:flex-row justify-between items-center bg-gray-100 p-3 rounded-lg">
                     <div className="flex items-center gap-3">
                         <Image src="/lead3.png" alt="Top Perf" width={40} height={40} priority className="rounded-full" />
-                        <p className="font-semibold">Cody Fisher</p>
+                        <p className="font-semibold text-black">Cody Fisher</p>
                     </div>
-                    <p><span className="text-muted-foreground">Stage: </span>Initial Inquiry</p>
+                    <p className="text-black"><span className="text-muted-foreground">Stage: </span>Initial Inquiry</p>
 
                 </div>
             </CardContent>

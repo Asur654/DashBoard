@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 
 const FinancialWellbeing = () => {
     return (
-        <Card className="rounded-2xl shadow-sm border p-4">
+        <Card className="rounded-2xl shadow-sm border p-4 transition-transform duration-200 hover:scale-105">
             <CardHeader>
                 <CardTitle>Financial Wellbeing</CardTitle>
             </CardHeader>
@@ -25,11 +25,11 @@ const FinancialWellbeing = () => {
                 <div className="mt-3 flex justify-between md:justify-around text-sm">
                     <div className="bg-gray-100 p-6 rounded-lg text-center flex flex-col gap-1">
                         <p className="font-medium text-muted-foreground">Target</p>
-                        <p className="font-bold text-xl">$500,000</p>
+                        <p className="font-bold text-xl text-black">$500,000</p>
                     </div>
                     <div className="bg-gray-100 p-6 rounded-lg text-center flex flex-col gap-1">
                         <p className="font-medium text-muted-foreground">Current</p>
-                        <p className="font-bold text-xl">$450,000</p>
+                        <p className="font-bold text-xl text-black ">$450,000</p>
                     </div>
                 </div>
             </CardContent>

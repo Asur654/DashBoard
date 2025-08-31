@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge"
 
 const KeyinsightNFeedback = () => {
     return (
-        <Card className="rounded-2xl shadow-sm border p-4">
+        <Card className="rounded-2xl shadow-sm border p-4 transition-transform duration-200 hover:scale-105">
             <CardHeader>
                 <CardTitle>Key Insight & Feedback</CardTitle>
             </CardHeader>

@@ -6,9 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const totalFran = () => {
   return (
-    <Card className="rounded-2xl shadow-sm border flex flex-col ">
+    <Card className="rounded-2xl shadow-sm border flex flex-col transition-transform duration-200 hover:scale-105">
       <CardHeader>
-        <CardTitle>Total Franchisees Onboard</CardTitle>
+        <CardTitle>Total Franchisees Onboard</CardTitle>  
       </CardHeader>
       <CardContent className="flex flex-col gap-8">
         <div className="flex justify-between">

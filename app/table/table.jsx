@@ -1,8 +1,9 @@
-import { FaFilePdf } from "react-icons/fa6";
+import { FaRegFilePdf } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
 import { IoFilterSharp } from "react-icons/io5";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { BsFiletypeDoc } from "react-icons/bs";
 
 import {
   Table,
@@ -65,9 +66,9 @@ const table = () => {
           <TableBody>
             {/* Row 1 */}
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <FaRegFilePdf className="text-2xl" />
                 <div>
                   <p>Tech requirements.pdf</p>
                   <p className="text-[9px] text-muted-foreground">200kb</p>
@@ -77,7 +78,7 @@ const table = () => {
               <TableCell>
                 <Badge
                   variant="secondary"
-                  className="bg-sky-100 text-sky-500 rounded-xl border border-sky-500"
+                  className="bg-sky-100 text-sky-500 rounded-xl border border-sky-500 transition-transform duration-200 hover:scale-110 cursor-pointer"
                 >
                   Legal
                 </Badge>
@@ -115,9 +116,9 @@ const table = () => {
             {/* 2nd Row */}
 
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <FaRegFilePdf className="text-2xl" />
                 <div>
                   <p>DashBoard screenshot.jpg</p>
                   <p className="text-[9px] text-muted-foreground">720kb</p>
@@ -127,7 +128,7 @@ const table = () => {
               <TableCell>
                 <Badge
                   variant="secondary"
-                  className="bg-green-100 text-green-500 rounded-xl border border-green-500"
+                  className="bg-green-100 text-green-500 rounded-xl border border-green-500 transition-transform duration-200 hover:scale-110 cursor-pointer"
                 >
                   Vendor & Assets
                 </Badge>
@@ -165,9 +166,9 @@ const table = () => {
             {/* 3rd Row */}
 
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <BsFiletypeDoc className="text-2xl" />
                 <div>
                   <p>Dashboard prototype recording.mp4</p>
                   <p className="text-[9px] text-muted-foreground">200kb</p>
@@ -177,14 +178,14 @@ const table = () => {
               <TableCell>
                 <Badge
                   variant="secondary"
-                  className="bg-orange-100 text-orange-500 rounded-xl border border-orange-500"
+                  className="bg-orange-100 text-orange-500 rounded-xl border border-orange-500 transition-transform duration-200 hover:scale-110 cursor-pointer"
                 >
                   Technology
                 </Badge>
               </TableCell>
 
               <TableCell>
-                <Switch />
+                <Switch className="data-[state=checked]:bg-sky-500" />
               </TableCell>
 
               <TableCell>
@@ -212,9 +213,9 @@ const table = () => {
             {/* 4th Row */}
 
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <BsFiletypeDoc className="text-2xl" />
                 <div>
                   <p>Financial Overview</p>
                   <p className="text-[9px] text-muted-foreground">4.2MB</p>
@@ -224,7 +225,7 @@ const table = () => {
               <TableCell>
                 <Badge
                   variant="secondary"
-                  className="bg-pink-100 text-pink-500 rounded-xl border border-pink-500"
+                  className="bg-pink-100 text-pink-500 rounded-xl border border-pink-500  transition-transform duration-200 hover:scale-110 cursor-pointer"
                 >
                   Financial
                 </Badge>
@@ -262,9 +263,9 @@ const table = () => {
             {/* 5th Row */}
 
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <BsFiletypeDoc className="text-2xl" />
                 <div>
                   <p>UX Design Guidelines.docx</p>
                   <p className="text-[9px] text-muted-foreground">400kb</p>
@@ -274,7 +275,7 @@ const table = () => {
               <TableCell>
                 <Badge
                   variant="secondary"
-                  className="bg-sky-100 text-sky-500 rounded-xl border border-sky-500"
+                  className="bg-sky-100 text-sky-500 rounded-xl border border-sky-500 transition-transform duration-200 hover:scale-110 cursor-pointer"
                 >
                   Legal
                 </Badge>
@@ -288,7 +289,7 @@ const table = () => {
               </TableCell>
 
               <TableCell>
-                <Switch />
+                <Switch className="data-[state=checked]:bg-sky-500" />
               </TableCell>
 
               <TableCell className="flex items-center">
@@ -309,9 +310,9 @@ const table = () => {
             {/* 6th Row */}
 
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <FaRegFilePdf className="text-2xl" />
                 <div>
                   <p>Dashboard interaction.aep</p>
                   <p className="text-[9px] text-muted-foreground">12MB</p>
@@ -321,7 +322,7 @@ const table = () => {
               <TableCell>
                 <Badge
                   variant="secondary"
-                  className="bg-sky-100 text-sky-500 rounded-xl border border-sky-500"
+                  className="bg-sky-100 text-sky-500 rounded-xl border border-sky-500 transition-transform duration-200 hover:scale-110 cursor-pointer"
                 >
                   Legal
                 </Badge>
@@ -359,9 +360,9 @@ const table = () => {
             {/* 7th Row */}
 
             <TableRow>
-              <TableCell className="font-semibold flex items-center gap-1">
+              <TableCell className="font-semibold flex items-center gap-1 cursor-pointer hover:text-sky-500">
                 <Checkbox />
-                <FaFilePdf className="text-2xl" />
+                <FaRegFilePdf className="text-2xl" />
                 <div>
                   <p>Briefing call recording.mp3</p>
                   <p className="text-[9px] text-muted-foreground">200kb</p>
@@ -378,11 +379,11 @@ const table = () => {
               </TableCell>
 
               <TableCell>
-                <Switch />
+                <Switch className="data-[state=checked]:bg-sky-500" />
               </TableCell>
 
               <TableCell>
-                <Switch />
+                <Switch className="data-[state=checked]:bg-sky-500" />
               </TableCell>
 
               <TableCell className="flex items-center">

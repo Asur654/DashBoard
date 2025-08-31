@@ -36,7 +36,7 @@ const chartConfig = {
 export function Chart() {
   return (
     <div>
-      <Card className="flex flex-col rounded-2xl text-start md:text-center shadow-sm border">
+      <Card className="flex flex-col rounded-2xl text-start md:text-center shadow-sm border transition-transform duration-200 hover:scale-105">
         <CardHeader className="items-center text-center pb-2">
           <CardTitle>Account Progress</CardTitle>
         </CardHeader>

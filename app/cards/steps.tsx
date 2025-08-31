@@ -7,7 +7,7 @@ import {
 
 const steps = () => {
     return (
-        <Card className="rounded-2xl shadow-sm border py-4">
+        <Card className="rounded-2xl shadow-sm border py-4 transition-transform duration-200 hover:scale-105">
             <CardContent>
                     <div className="bg-gray-100 p-4 rounded-md mb-4">
                         <p className="text-sm font-semibold">Steps Completed</p>
