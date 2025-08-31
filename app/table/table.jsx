@@ -1,6 +1,5 @@
 import { FaFilePdf } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
-import { FaSearch } from "react-icons/fa";
 import { IoFilterSharp } from "react-icons/io5";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -8,7 +7,6 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -20,7 +18,7 @@ import { Button } from "@/components/ui/button";
 
 const table = () => {
   return (
-    <div className="shadow-sm rounded-2xl border-2 flex flex-col gap-2 p-4">
+    <div className="w-screen md:w-full shadow-sm rounded-2xl border-2 flex flex-col gap-2 p-4 overflow-scroll">
       <div>
         <p className="font-semibold text-2xl">My Uploads</p>
         <p className="text-sm text-muted-foreground">
@@ -41,25 +39,26 @@ const table = () => {
         </Badge>
       </div>
 
-      <div className="overflow-x-auto">
-        <Table>
+      <div className="">
+        <Table className="w-full">
           <TableHeader className="bg-gray-100 border">
-            <TableRow>
-              <TableHead className="text-muted-foreground hidden md:table-cell">
+            <TableRow className="">
+              <TableHead className="text-muted-foreground md:table-cell">
                 Document Name
               </TableHead>
-              <TableHead className="text-muted-foreground hidden md:table-cell">
+              <TableHead className="text-muted-foreground md:table-cell">
                 Document Type
               </TableHead>
-              <TableHead className="text-muted-foreground hidden md:table-cell">
+              <TableHead className="text-muted-foreground md:table-cell">
                 AI App Inclusion
               </TableHead>
-              <TableHead className="text-muted-foreground hidden md:table-cell">
+              <TableHead className="text-muted-foreground md:table-cell">
                 Dashboard Inclusion
               </TableHead>
-              <TableHead className="text-muted-foreground hidden md:table-cell">
+              <TableHead className="text-muted-foreground md:table-cell">
                 Stage Access
               </TableHead>
+              <TableHead className="text-muted-foreground md:table-cell"></TableHead>
             </TableRow>
           </TableHeader>
 

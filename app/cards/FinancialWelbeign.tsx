@@ -22,7 +22,7 @@ const FinancialWellbeing = () => {
                 </div>
 
                 <hr className="my-4 border-gray-300" />
-                <div className="mt-3 flex justify-start md:justify-around text-sm">
+                <div className="mt-3 flex justify-between md:justify-around text-sm">
                     <div className="bg-gray-100 p-6 rounded-lg text-center flex flex-col gap-1">
                         <p className="font-medium text-muted-foreground">Target</p>
                         <p className="font-bold text-xl">$500,000</p>
