@@ -39,9 +39,15 @@ export default function RootLayout({
           <AppSidebar />
           <main>
             <div className="flex gap-2">
+            <div className="flex flex-col gap-1">
             <SidebarTrigger />
-            Menu
+            <span>Menu</span>
+            </div>
+            <div className="flex flex-col gap-1">
             <ModeToggle />
+            <span>Mode</span>
+            </div>
+            
             </div>
             {children}
           </main>
