@@ -38,8 +38,11 @@ export default function RootLayout({
         <SidebarProvider>
           <AppSidebar />
           <main>
+            <div className="flex gap-2">
             <SidebarTrigger />
+            Menu
             <ModeToggle />
+            </div>
             {children}
           </main>
         </SidebarProvider>
